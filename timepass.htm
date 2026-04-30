@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body bgcolor="red">
+
+    <h1><marquee behavior="" direction="" scrollamount="100">😍</marquee></h1>
+    <h1><marquee behavior="" direction="right" scrollamount="100">💗</marquee></h1>
+    <h1><marquee behavior="" direction="" scrollamount="100">😄</marquee></h1>
+    <h1><marquee behavior="" direction="right" scrollamount="100">⚽</marquee></h1>
+    <h1><marquee behavior="" direction="" scrollamount="100">🌖</marquee></h1>
+    <h1><marquee behavior="" direction="right" scrollamount="100">⛅</marquee></h1>
+    
+    <script>
+
+        let cnt = 0 ; 
+      function change() {
+
+        cnt ++ ; 
+        let b = document.querySelector("body");
+
+        arr = ['yellow' , 'white' , 'blue' , 'green' , 'black' , 'orange' , ]
+
+        b.bgColor =  arr[cnt];
+
+        if(cnt > arr.length) cnt = 0 ;
+      }
+      setInterval(change, 100);
+    </script>
+  </body>
+</html>
