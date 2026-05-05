@@ -90,8 +90,23 @@ const checkLogin = () => {
   if (checkEmail() && checkPassword() && checkMobile()) {
     m.innerHTML = "LOGIN SUCCESS";
     m.style.color = "blue";
-  } else {
-    m.innerHTML = "LOGIN FAILED";
+  } 
+  else if (checkEmail() && checkPassword() ) {
+    m.innerHTML = "Mobile is Incorrect";
+    m.style.color = "red";
+  } 
+    else if (checkEmail() && checkMobile() ) {
+    m.innerHTML = "Password is Incorrect";
+    m.style.color = "red";
+  } 
+
+      else if (checkPassword() && checkMobile() ) {
+    m.innerHTML = "Email is Incorrect";
+    m.style.color = "red";
+  } 
+  
+  else {
+    m.innerHTML = "LOGIN FAILED.. ALL is Incorrect";
     m.style.color = "red";
   }
   console.log("login function");
