@@ -13,12 +13,11 @@ function check() {
   if (uname == "tejas" && pass == "tka123") {
     console.log("login success..");
     message.innerHTML = "LOGIN SUCCESS..";
-    message.style.color = "blue" ; 
-} else {
+    message.style.color = "blue";
+  } else {
     console.log("login failed..");
     message.innerHTML = "LOGIN FAILED..";
-    message.style.color = "red" ; 
-  
+    message.style.color = "red";
   }
 
   console.log("button is working...");
